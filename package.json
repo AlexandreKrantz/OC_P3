@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed/"
   },
   "author": "",
   "license": "MIT",
+  "browserList": "last 4 versions",
   "dependencies": {
     "node-sass": "^4.13.1"
   }
