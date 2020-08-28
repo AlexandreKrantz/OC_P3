@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./components/menu";
 
 //include in base?
 body {
@@ -66,7 +67,7 @@ main {
 
       &:hover {
         color: $secondary-color;
-        @include ease-out();
+        @include easeOut();
       }
     }
   }

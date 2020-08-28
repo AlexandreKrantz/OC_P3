@@ -1,4 +1,4 @@
-@mixin ease-out {
+@mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
@@ -9,6 +9,7 @@
       background-attachment: fixed;
       background-size: cover;
 
+      //sudo element for overlay
       &:after {
         content: "";
         position: absolute;
