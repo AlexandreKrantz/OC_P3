@@ -23,3 +23,32 @@
     }
   }
 }
+
+//media queries
+@mixin mediaSm {
+  //style for screens of less than 500px width
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  //style for screens of less than 768px width
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  //style for screens in between 769px and 1170px
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  //style for screens of less than 500px width
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
