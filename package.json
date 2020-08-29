@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "responsive portfolio website",
   "main": "index.js",
+  "homepage": "https://alexandrekrantz.github.io/OC_P3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist",
     "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed/"
   },
   "author": "",
   "license": "MIT",
   "browserslist": "last 4 versions",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.13.1"
   }
 }
