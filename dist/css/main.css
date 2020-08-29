@@ -261,6 +261,24 @@ main#home {
   .projects {
     grid-template-columns: repeat(1, 1fr); } }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .boxes div {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
